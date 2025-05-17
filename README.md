@@ -1,6 +1,6 @@
 # Anime Unity Scraper
 
-A Python script to scrape and download anime episodes from Anime Unity.
+A Python script to scrape and download anime episodes from Anime Unity (https://www.animeunity.so/).
 
 ## Features
 
