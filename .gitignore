@@ -1,0 +1,6 @@
+# Ignore all MP4 files
+*.mp4
+*.json
+
+# Ignore the downloads directory since it will contain MP4 files
+downloads/ 
