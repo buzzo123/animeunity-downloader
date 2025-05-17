@@ -1,4 +1,4 @@
-# Anime Unity Scraper
+# Anime Unity Downloader
 
 A Python script to scrape and download anime episodes from Anime Unity.
 
