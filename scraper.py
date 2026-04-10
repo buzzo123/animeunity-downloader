@@ -130,7 +130,8 @@ def download_episode(episode_info, output_dir='downloads'):
 
 def scrape_episode_by_id(url, episode_id):
     # Construct the episode URL
-    url = f"{url}/{episode_id}"
+    base_url = url.rstrip("/")
+    url = f"{base_url}/{episode_id}"
     
     # Send a GET request to the URL
     response = requests.get(url)
@@ -226,6 +227,7 @@ def save_episodes_to_json(episodes, filename='episodes.json'):
 if __name__ == "__main__":
     # Get anime URL from user input
     anime_url = input("Please enter the anime URL (e.g., https://www.animeunity.so/anime/1469-naruto): ").strip()
+    anime_url = anime_url.rstrip("/")
     
     # Validate URL
     if not anime_url.startswith("https://www.animeunity.so/anime/"):
